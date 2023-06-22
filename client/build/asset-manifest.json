@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cbc6d480.css",
+    "main.js": "/static/js/main.e0382f42.js",
+    "static/js/498.a52224cb.chunk.js": "/static/js/498.a52224cb.chunk.js",
+    "static/js/703.3042b9d8.chunk.js": "/static/js/703.3042b9d8.chunk.js",
+    "static/js/513.67c52aed.chunk.js": "/static/js/513.67c52aed.chunk.js",
+    "static/media/login__bg.jpg": "/static/media/login__bg.26f3a0658965ab9cccfe.jpg",
+    "static/media/loader.gif": "/static/media/loader.9e8b19433ebb5fe22080.gif",
+    "static/media/dabba__logo__light.png": "/static/media/dabba__logo__light.a53506a5f5a7934bbb89.png",
+    "static/media/dabba__logo__dark.png.png": "/static/media/dabba__logo__dark.png.ba2b696dc5e6c2b00b6f.png",
+    "static/media/dabba__logoshort__light.png": "/static/media/dabba__logoshort__light.5cea2b51b7f80cb716d2.png",
+    "static/media/avatar.svg": "/static/media/avatar.a82f4ee704fdd880f4d821c85b42a7c5.svg",
+    "index.html": "/index.html",
+    "main.cbc6d480.css.map": "/static/css/main.cbc6d480.css.map",
+    "main.e0382f42.js.map": "/static/js/main.e0382f42.js.map",
+    "498.a52224cb.chunk.js.map": "/static/js/498.a52224cb.chunk.js.map",
+    "703.3042b9d8.chunk.js.map": "/static/js/703.3042b9d8.chunk.js.map",
+    "513.67c52aed.chunk.js.map": "/static/js/513.67c52aed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbc6d480.css",
+    "static/js/main.e0382f42.js"
+  ]
+}
