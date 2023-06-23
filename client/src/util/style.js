@@ -4,10 +4,10 @@ export const isNotActiveStyles =
   "text-l text-textColor hover:text-red-700 px-4 py-2 duration-100 transition-all ease-in-out";
 
 export const statuses = [
-  { id: 1, title: "Drinks", category: "drinks" },
-  { id: 2, title: "Bread", category: "bread" },
-  { id: 3, title: "Sabzi", category: "sabzi" },
-  { id: 4, title: "Raita", category: "raita" },
-  { id: 5, title: "Snacks", category: "snacks" },
-  { id: 6, title: "Meals", category: "meals" },
+  { id: 1, title: "Indian Thali", category: "thali" },
+  { id: 2, title: "Rice Bowl", category: "rice__bowl" },
+  { id: 3, title: "Khichdi", category: "khichdi" },
+  { id: 4, title: "Biryani", category: "biryani" },
+  { id: 5, title: "Desert", category: "desert" },
+  { id: 6, title: "Beverages", category: "beverage" },
 ];

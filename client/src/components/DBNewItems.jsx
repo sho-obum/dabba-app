@@ -28,6 +28,7 @@ const DBNewItems = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState(null);
   const [imageDownloadURL, setImageDownloadURL] = useState(null);
+  const [calorie, setCalorie] = useState(null);
 
   const alert = useSelector((state) => state.alert);
 
@@ -75,6 +76,17 @@ const DBNewItems = () => {
       }, 3000);
     });
   };
+
+  const submitNewData = () => {
+    const data = {
+      product_name: ItemName,
+      product_category: category,
+      procuct_price: price,
+      imageURL: imageDownloadURL,
+      calorie: calorie,
+    };
+    console.log(data);
+  };
   return (
     <div className="flex items-center justify-center flex-col pt-6 px-24 w-full">
       <div className="border border-gray-300 rounded-md p-4 w-full flex flex-col items-center justify-center gap-4">
@@ -100,12 +112,20 @@ const DBNewItems = () => {
               </p>
             ))}
         </div>
-        <InputValueField
-          type="number"
-          placeholder={"Item price here"}
-          stateFunc={setPrice}
-          stateValue={price}
-        />
+        <div className="w-full flex justify-between flex-1 gap-3">
+          <InputValueField
+            type="number"
+            placeholder={"Item price here"}
+            stateFunc={setPrice}
+            stateValue={price}
+          />
+          <InputValueField
+            type="number"
+            placeholder={"Item Calorie here"}
+            stateFunc={setCalorie}
+            stateValue={calorie}
+          />
+        </div>
 
         <div className="w-full bg-card backdrop-blur-md h-370 rounded-md border-2 border-dotted border-gray-300 cursor-pointer">
           {isLoading ? (
@@ -180,6 +200,14 @@ const DBNewItems = () => {
             </>
           )}
         </div>
+
+        <motion.button
+          onClick={submitNewData}
+          {...buttonClick}
+          className="w-9/12 py-2 rounded-md bg-red-400 text-primary hover:bg-red-500 cursor-pointer"
+        >
+          Save
+        </motion.button>
       </div>
     </div>
   );

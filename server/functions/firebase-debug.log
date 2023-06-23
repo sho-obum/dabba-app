@@ -1,0 +1,1023 @@
+[debug] [2023-06-23T05:40:12.152Z] ----------------------------------------------------------------------
+[debug] [2023-06-23T05:40:12.156Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shubh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-06-23T05:40:12.157Z] CLI Version:   12.4.0
+[debug] [2023-06-23T05:40:12.158Z] Platform:      win32
+[debug] [2023-06-23T05:40:12.158Z] Node Version:  v16.13.0
+[debug] [2023-06-23T05:40:12.180Z] Time:          Fri Jun 23 2023 11:10:12 GMT+0530 (India Standard Time)
+[debug] [2023-06-23T05:40:12.180Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-23T05:40:12.187Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-06-23T05:40:12.651Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-23T05:40:12.656Z] > authorizing via signed-in user (skap0903@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-06-23T05:40:12.693Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2023-06-23T05:40:12.702Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project chai-del. This may result in unexpected behavior. 
+[debug] [2023-06-23T05:40:12.743Z] [hub] writing locator at C:\Users\shubh\AppData\Local\Temp\hub-chai-del.json
+[debug] [2023-06-23T05:40:12.810Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-23T05:40:12.810Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-23T05:40:12.810Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-06-23T05:40:12.866Z] defaultcredentials: writing to file C:\Users\shubh\AppData\Roaming\firebase\skap0903_gmail_com_application_default_credentials.json
+[debug] [2023-06-23T05:40:12.928Z] Setting GAC to C:\Users\shubh\AppData\Roaming\firebase\skap0903_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\shubh\\AppData\\Roaming\\firebase\\skap0903_gmail_com_application_default_credentials.json"}}
+[debug] [2023-06-23T05:40:12.930Z] > refreshing access token with scopes: []
+[debug] [2023-06-23T05:40:12.932Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-23T05:40:12.933Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-23T05:40:13.700Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-06-23T05:40:13.700Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-06-23T05:40:13.785Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-23T05:40:13.785Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-23T05:40:13.801Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chai-del/adminSdkConfig [none]
+[debug] [2023-06-23T05:40:14.636Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chai-del/adminSdkConfig 200
+[debug] [2023-06-23T05:40:14.636Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chai-del/adminSdkConfig {"projectId":"chai-del","storageBucket":"chai-del.appspot.com","locationId":"us-central"}
+[debug] [2023-06-23T05:40:14.690Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-06-23T05:40:14.690Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-06-23T05:40:14.690Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\shubh\\.cache\\firebase\\emulators\\ui-v1.11.6\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\shubh\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.6\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-06-23T05:40:14.906Z] Web / API server started at 127.0.0.1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\n"}}
+[debug] [2023-06-23T05:40:14.907Z] Web / API server started at ::1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4001\n"}}
+[info] i  functions: Watching "F:\React_Project\chaishai\server\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"F:\\React_Project\\chaishai\\server\\functions\" for Cloud Functions..."}}
+[debug] [2023-06-23T05:40:14.983Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T05:40:17.108Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T05:40:17.109Z] Building nodejs source
+[debug] [2023-06-23T05:40:17.110Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T05:40:17.128Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T05:40:17.144Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T05:40:19.354Z] Serving at port 8795
+
+[debug] [2023-06-23T05:40:26.146Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T05:40:26.166Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] +  functions[us-central1-app]: http function initialized (http://127.0.0.1:5001/chai-del/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/chai-del/us-central1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4001/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4001/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-06-23T15:22:50.366Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.359Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:22:50.386Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.359Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:22:50.392Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:22:50.443Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:22:50.445Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T15:22:50.504Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-06-23T15:22:50.508Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2023-06-23T15:22:50.543Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.543Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.359Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:22:50.543Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.359Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.543Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:22:50.543Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:22:50.547Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:22:50.548Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T15:22:50.565Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-06-23T15:22:50.565Z] [worker-pool] Adding worker with key us-central1-app, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=2"}}
+[debug] [2023-06-23T15:22:50.568Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.568Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.359Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.543Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:22:50.569Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.359Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.543Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.568Z"],"workRunningCount":3}
+[debug] [2023-06-23T15:22:50.569Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:22:50.575Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:22:50.575Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T15:22:50.590Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-06-23T15:22:50.590Z] [worker-pool] Adding worker with key us-central1-app, total=3 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=3"}}
+[debug] [2023-06-23T15:22:54.504Z] [runtime-status] [17568] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:54.504Z] [runtime-status] [17336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:54.504Z] [runtime-status] [14072] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:54.533Z] [runtime-status] [17336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:54.534Z] [runtime-status] [17568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:54.534Z] [runtime-status] [14072] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:54.535Z] [runtime-status] [14072] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-23T15:22:54.535Z] [runtime-status] [17336] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-23T15:22:54.536Z] [runtime-status] [17568] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-23T15:22:54.538Z] [runtime-status] [14072] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:54.538Z] [runtime-status] [17568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:54.538Z] [runtime-status] [17336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.278Z] [runtime-status] [14072] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-23T15:22:56.279Z] [runtime-status] [14072] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-06-23T15:22:56.280Z] [runtime-status] [17568] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-23T15:22:56.280Z] [runtime-status] [17568] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-06-23T15:22:56.281Z] [runtime-status] [17568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.281Z] [runtime-status] [17336] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-23T15:22:56.282Z] [runtime-status] [17336] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-06-23T15:22:56.282Z] [runtime-status] [17336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.282Z] [runtime-status] [14072] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.283Z] [runtime-status] [14072] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.283Z] [runtime-status] [17336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.290Z] [runtime-status] [17568] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.300Z] [runtime-status] [14072] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.301Z] [runtime-status] [17336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.301Z] [runtime-status] [17336] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-06-23T15:22:56.301Z] [runtime-status] [14072] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-06-23T15:22:56.302Z] [runtime-status] [17568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-23T15:22:56.302Z] [runtime-status] [17568] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"F:\\React_Project\\chaishai\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-06-23T15:22:57.066Z] [runtime-status] [17568] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"chai-del","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiboQ/mMisubTq\nUueqmMpx+wlGw40Z6/ZHPryiewjf+MRx2awm7fezqHd+EviHczn8vMidUgtmKtHJ\n+DDJM3LY2Snz7tqfn065WgtiTjaPAkFB1tgOHRkQw1Jvd1QklBETa8hVEuve95go\nJMNTFJSl4HmAmK0bU48VfoyRV3W2IGp9OJYa+V+ewYaDH+i5tYOpvcbYZxr82/xM\nlmh5IE5h+jpLXR/xbQ3eiURV33FQoihv/SzGLA4L6KZbtQBQmnomXq5t4yqwHi5t\naqzEjfVp+Pqgoq8fDI/v82KCOl8GMD6zKsCUe+ci4j7D6ivAsn/ZxE/AJ+FNVaAO\nuE1BPlyFAgMBAAECggEABIOQOsk26G/numxP4lKJK7Y3eYc1LF99kljIurYzFrBN\n20EakuFhlRVNLsx9qhv2ZFLlu1N8nBv8BQIX7vt2SVbtnskIO8/cSvPY5aQ5SWud\nXyRGkEvYNrpK1+ynwrV3rQO9hzm1otZcHN96qxwjDmII1l1H0D7X9teztdVJoORF\n3OMigtGEnXcICJVS8PX8fMJG36HvLDTJePPfMnqQhqf0wGaoq7PuHDwPoESnx3LQ\nr8w4Q5Vfu4ypiZbv4RhgMErEIWs+4Exk32gIoVdeveKXnho14kq4kuqlrXcdZMlq\nWhA9DS1sZ7/WOfkKXPvw0p9OjSsoAC7eb8kvR72tuQKBgQDakEWbcndpZxM2SxA9\n+yU+GPdfDZP1N+Ls+hMG68h/xF9/HmgEk/D5dZ+KUhA05kRcijPqen49y++tVEQD\nFKbpqHaO8UPAbF5/76P2gUsd9faCwpJikuBopS9Y3btNPFQ6FdXz5UpezOVMM5sP\nBH0jolPHmAta8cCnFZG2z1LGKQKBgQC+QO+MtaVtl8Unr4ZDbQMea2IhYg/u5SHe\nRHGULPxMz129aNmL57bKfFtbKLPszqUK9ZPWIAPLIU87IOMGb7+EK0Mc9z77kLQ8\noNwbhUpZnRPKzqk7tv6GSw0L+y6493a5GaV3aOFmb5tUfhGRnBUO0/AjcmehwUMl\n7nxtV0EW/QKBgHaJuLbOJiVsWecgXva+tzwunjtXSd+9J74PAzLFvkBNaN2wyAlz\nk0Y4nQaP62pFWN43tmB9fupVKPCAu0JQeRZQ37w27d/25mnMtsiC5xKgy8mvbWU4\n86zNqhgwad1B0wyNuzREL0mrJtFlS7uhW51v9LBTrhTs+OelsxnK58HBAoGBAJLG\nhgiIGpfx/qgfQfXCpCVTsuEORjyHiRlwtC8chYi8chUuTqcgnGSai+BIBocq5SkP\nTH5lNIgBqp5zQLI2hAnzVlOCa5SojmQ3tZeFvVZlWF+eD/GBu9rfC7GyltkcEPu8\nTWtR/pKIh80ndWZgg95so1a1bD3eW29oDZZNOmoBAoGBAI4CIQIoIUUkGfrUxY9A\nhsgy7pJZOBnPQfL11tcXu6eVyBEwpEDKvPDzsLNyC2mvXtmAXYE3PEvN9Lw9P47W\nBvUK1k2SKo/M588RE4IyFJKOYWsbeI69obhMpqe/UNxNxytr9rC4yMd60KAipbU5\nbNgzRF1LIZQLgUA3erS0+eBl\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-mtj15@chai-del.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"chai-del\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiboQ/mMisubTq\\nUueqmMpx+wlGw40Z6/ZHPryiewjf+MRx2awm7fezqHd+EviHczn8vMidUgtmKtHJ\\n+DDJM3LY2Snz7tqfn065WgtiTjaPAkFB1tgOHRkQw1Jvd1QklBETa8hVEuve95go\\nJMNTFJSl4HmAmK0bU48VfoyRV3W2IGp9OJYa+V+ewYaDH+i5tYOpvcbYZxr82/xM\\nlmh5IE5h+jpLXR/xbQ3eiURV33FQoihv/SzGLA4L6KZbtQBQmnomXq5t4yqwHi5t\\naqzEjfVp+Pqgoq8fDI/v82KCOl8GMD6zKsCUe+ci4j7D6ivAsn/ZxE/AJ+FNVaAO\\nuE1BPlyFAgMBAAECggEABIOQOsk26G/numxP4lKJK7Y3eYc1LF99kljIurYzFrBN\\n20EakuFhlRVNLsx9qhv2ZFLlu1N8nBv8BQIX7vt2SVbtnskIO8/cSvPY5aQ5SWud\\nXyRGkEvYNrpK1+ynwrV3rQO9hzm1otZcHN96qxwjDmII1l1H0D7X9teztdVJoORF\\n3OMigtGEnXcICJVS8PX8fMJG36HvLDTJePPfMnqQhqf0wGaoq7PuHDwPoESnx3LQ\\nr8w4Q5Vfu4ypiZbv4RhgMErEIWs+4Exk32gIoVdeveKXnho14kq4kuqlrXcdZMlq\\nWhA9DS1sZ7/WOfkKXPvw0p9OjSsoAC7eb8kvR72tuQKBgQDakEWbcndpZxM2SxA9\\n+yU+GPdfDZP1N+Ls+hMG68h/xF9/HmgEk/D5dZ+KUhA05kRcijPqen49y++tVEQD\\nFKbpqHaO8UPAbF5/76P2gUsd9faCwpJikuBopS9Y3btNPFQ6FdXz5UpezOVMM5sP\\nBH0jolPHmAta8cCnFZG2z1LGKQKBgQC+QO+MtaVtl8Unr4ZDbQMea2IhYg/u5SHe\\nRHGULPxMz129aNmL57bKfFtbKLPszqUK9ZPWIAPLIU87IOMGb7+EK0Mc9z77kLQ8\\noNwbhUpZnRPKzqk7tv6GSw0L+y6493a5GaV3aOFmb5tUfhGRnBUO0/AjcmehwUMl\\n7nxtV0EW/QKBgHaJuLbOJiVsWecgXva+tzwunjtXSd+9J74PAzLFvkBNaN2wyAlz\\nk0Y4nQaP62pFWN43tmB9fupVKPCAu0JQeRZQ37w27d/25mnMtsiC5xKgy8mvbWU4\\n86zNqhgwad1B0wyNuzREL0mrJtFlS7uhW51v9LBTrhTs+OelsxnK58HBAoGBAJLG\\nhgiIGpfx/qgfQfXCpCVTsuEORjyHiRlwtC8chYi8chUuTqcgnGSai+BIBocq5SkP\\nTH5lNIgBqp5zQLI2hAnzVlOCa5SojmQ3tZeFvVZlWF+eD/GBu9rfC7GyltkcEPu8\\nTWtR/pKIh80ndWZgg95so1a1bD3eW29oDZZNOmoBAoGBAI4CIQIoIUUkGfrUxY9A\\nhsgy7pJZOBnPQfL11tcXu6eVyBEwpEDKvPDzsLNyC2mvXtmAXYE3PEvN9Lw9P47W\\nBvUK1k2SKo/M588RE4IyFJKOYWsbeI69obhMpqe/UNxNxytr9rC4yMd60KAipbU5\\nbNgzRF1LIZQLgUA3erS0+eBl\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-mtj15@chai-del.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2023-06-23T15:22:57.066Z] [runtime-status] [14072] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"chai-del","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiboQ/mMisubTq\nUueqmMpx+wlGw40Z6/ZHPryiewjf+MRx2awm7fezqHd+EviHczn8vMidUgtmKtHJ\n+DDJM3LY2Snz7tqfn065WgtiTjaPAkFB1tgOHRkQw1Jvd1QklBETa8hVEuve95go\nJMNTFJSl4HmAmK0bU48VfoyRV3W2IGp9OJYa+V+ewYaDH+i5tYOpvcbYZxr82/xM\nlmh5IE5h+jpLXR/xbQ3eiURV33FQoihv/SzGLA4L6KZbtQBQmnomXq5t4yqwHi5t\naqzEjfVp+Pqgoq8fDI/v82KCOl8GMD6zKsCUe+ci4j7D6ivAsn/ZxE/AJ+FNVaAO\nuE1BPlyFAgMBAAECggEABIOQOsk26G/numxP4lKJK7Y3eYc1LF99kljIurYzFrBN\n20EakuFhlRVNLsx9qhv2ZFLlu1N8nBv8BQIX7vt2SVbtnskIO8/cSvPY5aQ5SWud\nXyRGkEvYNrpK1+ynwrV3rQO9hzm1otZcHN96qxwjDmII1l1H0D7X9teztdVJoORF\n3OMigtGEnXcICJVS8PX8fMJG36HvLDTJePPfMnqQhqf0wGaoq7PuHDwPoESnx3LQ\nr8w4Q5Vfu4ypiZbv4RhgMErEIWs+4Exk32gIoVdeveKXnho14kq4kuqlrXcdZMlq\nWhA9DS1sZ7/WOfkKXPvw0p9OjSsoAC7eb8kvR72tuQKBgQDakEWbcndpZxM2SxA9\n+yU+GPdfDZP1N+Ls+hMG68h/xF9/HmgEk/D5dZ+KUhA05kRcijPqen49y++tVEQD\nFKbpqHaO8UPAbF5/76P2gUsd9faCwpJikuBopS9Y3btNPFQ6FdXz5UpezOVMM5sP\nBH0jolPHmAta8cCnFZG2z1LGKQKBgQC+QO+MtaVtl8Unr4ZDbQMea2IhYg/u5SHe\nRHGULPxMz129aNmL57bKfFtbKLPszqUK9ZPWIAPLIU87IOMGb7+EK0Mc9z77kLQ8\noNwbhUpZnRPKzqk7tv6GSw0L+y6493a5GaV3aOFmb5tUfhGRnBUO0/AjcmehwUMl\n7nxtV0EW/QKBgHaJuLbOJiVsWecgXva+tzwunjtXSd+9J74PAzLFvkBNaN2wyAlz\nk0Y4nQaP62pFWN43tmB9fupVKPCAu0JQeRZQ37w27d/25mnMtsiC5xKgy8mvbWU4\n86zNqhgwad1B0wyNuzREL0mrJtFlS7uhW51v9LBTrhTs+OelsxnK58HBAoGBAJLG\nhgiIGpfx/qgfQfXCpCVTsuEORjyHiRlwtC8chYi8chUuTqcgnGSai+BIBocq5SkP\nTH5lNIgBqp5zQLI2hAnzVlOCa5SojmQ3tZeFvVZlWF+eD/GBu9rfC7GyltkcEPu8\nTWtR/pKIh80ndWZgg95so1a1bD3eW29oDZZNOmoBAoGBAI4CIQIoIUUkGfrUxY9A\nhsgy7pJZOBnPQfL11tcXu6eVyBEwpEDKvPDzsLNyC2mvXtmAXYE3PEvN9Lw9P47W\nBvUK1k2SKo/M588RE4IyFJKOYWsbeI69obhMpqe/UNxNxytr9rC4yMd60KAipbU5\nbNgzRF1LIZQLgUA3erS0+eBl\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-mtj15@chai-del.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"chai-del\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiboQ/mMisubTq\\nUueqmMpx+wlGw40Z6/ZHPryiewjf+MRx2awm7fezqHd+EviHczn8vMidUgtmKtHJ\\n+DDJM3LY2Snz7tqfn065WgtiTjaPAkFB1tgOHRkQw1Jvd1QklBETa8hVEuve95go\\nJMNTFJSl4HmAmK0bU48VfoyRV3W2IGp9OJYa+V+ewYaDH+i5tYOpvcbYZxr82/xM\\nlmh5IE5h+jpLXR/xbQ3eiURV33FQoihv/SzGLA4L6KZbtQBQmnomXq5t4yqwHi5t\\naqzEjfVp+Pqgoq8fDI/v82KCOl8GMD6zKsCUe+ci4j7D6ivAsn/ZxE/AJ+FNVaAO\\nuE1BPlyFAgMBAAECggEABIOQOsk26G/numxP4lKJK7Y3eYc1LF99kljIurYzFrBN\\n20EakuFhlRVNLsx9qhv2ZFLlu1N8nBv8BQIX7vt2SVbtnskIO8/cSvPY5aQ5SWud\\nXyRGkEvYNrpK1+ynwrV3rQO9hzm1otZcHN96qxwjDmII1l1H0D7X9teztdVJoORF\\n3OMigtGEnXcICJVS8PX8fMJG36HvLDTJePPfMnqQhqf0wGaoq7PuHDwPoESnx3LQ\\nr8w4Q5Vfu4ypiZbv4RhgMErEIWs+4Exk32gIoVdeveKXnho14kq4kuqlrXcdZMlq\\nWhA9DS1sZ7/WOfkKXPvw0p9OjSsoAC7eb8kvR72tuQKBgQDakEWbcndpZxM2SxA9\\n+yU+GPdfDZP1N+Ls+hMG68h/xF9/HmgEk/D5dZ+KUhA05kRcijPqen49y++tVEQD\\nFKbpqHaO8UPAbF5/76P2gUsd9faCwpJikuBopS9Y3btNPFQ6FdXz5UpezOVMM5sP\\nBH0jolPHmAta8cCnFZG2z1LGKQKBgQC+QO+MtaVtl8Unr4ZDbQMea2IhYg/u5SHe\\nRHGULPxMz129aNmL57bKfFtbKLPszqUK9ZPWIAPLIU87IOMGb7+EK0Mc9z77kLQ8\\noNwbhUpZnRPKzqk7tv6GSw0L+y6493a5GaV3aOFmb5tUfhGRnBUO0/AjcmehwUMl\\n7nxtV0EW/QKBgHaJuLbOJiVsWecgXva+tzwunjtXSd+9J74PAzLFvkBNaN2wyAlz\\nk0Y4nQaP62pFWN43tmB9fupVKPCAu0JQeRZQ37w27d/25mnMtsiC5xKgy8mvbWU4\\n86zNqhgwad1B0wyNuzREL0mrJtFlS7uhW51v9LBTrhTs+OelsxnK58HBAoGBAJLG\\nhgiIGpfx/qgfQfXCpCVTsuEORjyHiRlwtC8chYi8chUuTqcgnGSai+BIBocq5SkP\\nTH5lNIgBqp5zQLI2hAnzVlOCa5SojmQ3tZeFvVZlWF+eD/GBu9rfC7GyltkcEPu8\\nTWtR/pKIh80ndWZgg95so1a1bD3eW29oDZZNOmoBAoGBAI4CIQIoIUUkGfrUxY9A\\nhsgy7pJZOBnPQfL11tcXu6eVyBEwpEDKvPDzsLNyC2mvXtmAXYE3PEvN9Lw9P47W\\nBvUK1k2SKo/M588RE4IyFJKOYWsbeI69obhMpqe/UNxNxytr9rC4yMd60KAipbU5\\nbNgzRF1LIZQLgUA3erS0+eBl\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-mtj15@chai-del.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2023-06-23T15:22:57.066Z] [runtime-status] [17336] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"chai-del","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiboQ/mMisubTq\nUueqmMpx+wlGw40Z6/ZHPryiewjf+MRx2awm7fezqHd+EviHczn8vMidUgtmKtHJ\n+DDJM3LY2Snz7tqfn065WgtiTjaPAkFB1tgOHRkQw1Jvd1QklBETa8hVEuve95go\nJMNTFJSl4HmAmK0bU48VfoyRV3W2IGp9OJYa+V+ewYaDH+i5tYOpvcbYZxr82/xM\nlmh5IE5h+jpLXR/xbQ3eiURV33FQoihv/SzGLA4L6KZbtQBQmnomXq5t4yqwHi5t\naqzEjfVp+Pqgoq8fDI/v82KCOl8GMD6zKsCUe+ci4j7D6ivAsn/ZxE/AJ+FNVaAO\nuE1BPlyFAgMBAAECggEABIOQOsk26G/numxP4lKJK7Y3eYc1LF99kljIurYzFrBN\n20EakuFhlRVNLsx9qhv2ZFLlu1N8nBv8BQIX7vt2SVbtnskIO8/cSvPY5aQ5SWud\nXyRGkEvYNrpK1+ynwrV3rQO9hzm1otZcHN96qxwjDmII1l1H0D7X9teztdVJoORF\n3OMigtGEnXcICJVS8PX8fMJG36HvLDTJePPfMnqQhqf0wGaoq7PuHDwPoESnx3LQ\nr8w4Q5Vfu4ypiZbv4RhgMErEIWs+4Exk32gIoVdeveKXnho14kq4kuqlrXcdZMlq\nWhA9DS1sZ7/WOfkKXPvw0p9OjSsoAC7eb8kvR72tuQKBgQDakEWbcndpZxM2SxA9\n+yU+GPdfDZP1N+Ls+hMG68h/xF9/HmgEk/D5dZ+KUhA05kRcijPqen49y++tVEQD\nFKbpqHaO8UPAbF5/76P2gUsd9faCwpJikuBopS9Y3btNPFQ6FdXz5UpezOVMM5sP\nBH0jolPHmAta8cCnFZG2z1LGKQKBgQC+QO+MtaVtl8Unr4ZDbQMea2IhYg/u5SHe\nRHGULPxMz129aNmL57bKfFtbKLPszqUK9ZPWIAPLIU87IOMGb7+EK0Mc9z77kLQ8\noNwbhUpZnRPKzqk7tv6GSw0L+y6493a5GaV3aOFmb5tUfhGRnBUO0/AjcmehwUMl\n7nxtV0EW/QKBgHaJuLbOJiVsWecgXva+tzwunjtXSd+9J74PAzLFvkBNaN2wyAlz\nk0Y4nQaP62pFWN43tmB9fupVKPCAu0JQeRZQ37w27d/25mnMtsiC5xKgy8mvbWU4\n86zNqhgwad1B0wyNuzREL0mrJtFlS7uhW51v9LBTrhTs+OelsxnK58HBAoGBAJLG\nhgiIGpfx/qgfQfXCpCVTsuEORjyHiRlwtC8chYi8chUuTqcgnGSai+BIBocq5SkP\nTH5lNIgBqp5zQLI2hAnzVlOCa5SojmQ3tZeFvVZlWF+eD/GBu9rfC7GyltkcEPu8\nTWtR/pKIh80ndWZgg95so1a1bD3eW29oDZZNOmoBAoGBAI4CIQIoIUUkGfrUxY9A\nhsgy7pJZOBnPQfL11tcXu6eVyBEwpEDKvPDzsLNyC2mvXtmAXYE3PEvN9Lw9P47W\nBvUK1k2SKo/M588RE4IyFJKOYWsbeI69obhMpqe/UNxNxytr9rC4yMd60KAipbU5\nbNgzRF1LIZQLgUA3erS0+eBl\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-mtj15@chai-del.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"chai-del\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiboQ/mMisubTq\\nUueqmMpx+wlGw40Z6/ZHPryiewjf+MRx2awm7fezqHd+EviHczn8vMidUgtmKtHJ\\n+DDJM3LY2Snz7tqfn065WgtiTjaPAkFB1tgOHRkQw1Jvd1QklBETa8hVEuve95go\\nJMNTFJSl4HmAmK0bU48VfoyRV3W2IGp9OJYa+V+ewYaDH+i5tYOpvcbYZxr82/xM\\nlmh5IE5h+jpLXR/xbQ3eiURV33FQoihv/SzGLA4L6KZbtQBQmnomXq5t4yqwHi5t\\naqzEjfVp+Pqgoq8fDI/v82KCOl8GMD6zKsCUe+ci4j7D6ivAsn/ZxE/AJ+FNVaAO\\nuE1BPlyFAgMBAAECggEABIOQOsk26G/numxP4lKJK7Y3eYc1LF99kljIurYzFrBN\\n20EakuFhlRVNLsx9qhv2ZFLlu1N8nBv8BQIX7vt2SVbtnskIO8/cSvPY5aQ5SWud\\nXyRGkEvYNrpK1+ynwrV3rQO9hzm1otZcHN96qxwjDmII1l1H0D7X9teztdVJoORF\\n3OMigtGEnXcICJVS8PX8fMJG36HvLDTJePPfMnqQhqf0wGaoq7PuHDwPoESnx3LQ\\nr8w4Q5Vfu4ypiZbv4RhgMErEIWs+4Exk32gIoVdeveKXnho14kq4kuqlrXcdZMlq\\nWhA9DS1sZ7/WOfkKXPvw0p9OjSsoAC7eb8kvR72tuQKBgQDakEWbcndpZxM2SxA9\\n+yU+GPdfDZP1N+Ls+hMG68h/xF9/HmgEk/D5dZ+KUhA05kRcijPqen49y++tVEQD\\nFKbpqHaO8UPAbF5/76P2gUsd9faCwpJikuBopS9Y3btNPFQ6FdXz5UpezOVMM5sP\\nBH0jolPHmAta8cCnFZG2z1LGKQKBgQC+QO+MtaVtl8Unr4ZDbQMea2IhYg/u5SHe\\nRHGULPxMz129aNmL57bKfFtbKLPszqUK9ZPWIAPLIU87IOMGb7+EK0Mc9z77kLQ8\\noNwbhUpZnRPKzqk7tv6GSw0L+y6493a5GaV3aOFmb5tUfhGRnBUO0/AjcmehwUMl\\n7nxtV0EW/QKBgHaJuLbOJiVsWecgXva+tzwunjtXSd+9J74PAzLFvkBNaN2wyAlz\\nk0Y4nQaP62pFWN43tmB9fupVKPCAu0JQeRZQ37w27d/25mnMtsiC5xKgy8mvbWU4\\n86zNqhgwad1B0wyNuzREL0mrJtFlS7uhW51v9LBTrhTs+OelsxnK58HBAoGBAJLG\\nhgiIGpfx/qgfQfXCpCVTsuEORjyHiRlwtC8chYi8chUuTqcgnGSai+BIBocq5SkP\\nTH5lNIgBqp5zQLI2hAnzVlOCa5SojmQ3tZeFvVZlWF+eD/GBu9rfC7GyltkcEPu8\\nTWtR/pKIh80ndWZgg95so1a1bD3eW29oDZZNOmoBAoGBAI4CIQIoIUUkGfrUxY9A\\nhsgy7pJZOBnPQfL11tcXu6eVyBEwpEDKvPDzsLNyC2mvXtmAXYE3PEvN9Lw9P47W\\nBvUK1k2SKo/M588RE4IyFJKOYWsbeI69obhMpqe/UNxNxytr9rC4yMd60KAipbU5\\nbNgzRF1LIZQLgUA3erS0+eBl\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-mtj15@chai-del.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2023-06-23T15:22:57.109Z] [runtime-status] [17336] Functions runtime initialized. {"cwd":"F:\\React_Project\\chaishai\\server\\functions","node_version":"16.13.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Functions runtime initialized. {\"cwd\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\",\"node_version\":\"16.13.0\"}"}}
+[debug] [2023-06-23T15:22:57.109Z] [runtime-status] [17336] Listening to port: \\?\pipe\fire_emu_5b50e881d0fc1a64 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17336] Listening to port: \\\\?\\pipe\\fire_emu_5b50e881d0fc1a64"}}
+[debug] [2023-06-23T15:22:57.109Z] [runtime-status] [17568] Functions runtime initialized. {"cwd":"F:\\React_Project\\chaishai\\server\\functions","node_version":"16.13.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Functions runtime initialized. {\"cwd\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\",\"node_version\":\"16.13.0\"}"}}
+[debug] [2023-06-23T15:22:57.110Z] [runtime-status] [17568] Listening to port: \\?\pipe\fire_emu_3643b5e3804d4e6e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [17568] Listening to port: \\\\?\\pipe\\fire_emu_3643b5e3804d4e6e"}}
+[debug] [2023-06-23T15:22:57.119Z] [runtime-status] [14072] Functions runtime initialized. {"cwd":"F:\\React_Project\\chaishai\\server\\functions","node_version":"16.13.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Functions runtime initialized. {\"cwd\":\"F:\\\\React_Project\\\\chaishai\\\\server\\\\functions\",\"node_version\":\"16.13.0\"}"}}
+[debug] [2023-06-23T15:22:57.121Z] [runtime-status] [14072] Listening to port: \\?\pipe\fire_emu_f71872e55a65d9d1 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [14072] Listening to port: \\\\?\\pipe\\fire_emu_f71872e55a65d9d1"}}
+[debug] [2023-06-23T15:22:57.178Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T15:22:57.178Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:22:57.189Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T15:22:57.193Z] [worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: IDLE"}}
+[debug] [2023-06-23T15:22:57.194Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:22:57.206Z] [worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: BUSY"}}
+[debug] [2023-06-23T15:22:57.206Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:22:57.207Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:22:57.215Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:22:57.221Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 31.9641ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 31.9641ms"}}
+[debug] [2023-06-23T15:22:57.222Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T15:22:57.223Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:22:57.223Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:22:57.224Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.359Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.568Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:22:57.234Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 28.9703ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 28.9703ms"}}
+[debug] [2023-06-23T15:22:57.236Z] [worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: IDLE"}}
+[debug] [2023-06-23T15:22:57.236Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:22:57.236Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:22:57.236Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:50.359Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:22:57.240Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 25.0242ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 25.0242ms"}}
+[debug] [2023-06-23T15:22:57.241Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:22:57.241Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:22:57.241Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:22:57.242Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:22:57.248Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:57.248Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:22:57.249Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:57.248Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:22:57.249Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:22:57.254Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:22:57.254Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:22:57.254Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:22:57.255Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[warn] !  functions: The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production."}}
+[debug] [2023-06-23T15:22:58.017Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 762.2151ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 762.2151ms"}}
+[debug] [2023-06-23T15:22:58.020Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:22:58.021Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:22:58.021Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:22:58.021Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:22:58.023Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:58.023Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:22:58.023Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:58.023Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:22:58.023Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:22:58.029Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:22:58.030Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:22:58.030Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:22:58.033Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:22:58.043Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 12.2074ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 12.2074ms"}}
+[debug] [2023-06-23T15:22:58.046Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:22:58.050Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:22:58.050Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:22:58.051Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:22:58.060Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:58.060Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:22:58.060Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:22:58.060Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:22:58.060Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:22:58.066Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:22:58.066Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:22:58.066Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:22:58.068Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:22:58.085Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 17.8654ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 17.8654ms"}}
+[debug] [2023-06-23T15:22:58.122Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:22:58.123Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:22:58.123Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:22:58.123Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:23:14.058Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.058Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:23:14.058Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.058Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:23:14.059Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:23:14.063Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:23:14.063Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:23:14.064Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:23:14.067Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:23:14.070Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.070Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.058Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:23:14.070Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.058Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.070Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:23:14.070Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:23:14.074Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:23:14.075Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:23:14.075Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:23:14.094Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T15:23:14.117Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 50.2595ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 50.2595ms"}}
+[debug] [2023-06-23T15:23:14.127Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:23:14.128Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:23:14.128Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:23:14.128Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.070Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:23:14.129Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 35.1151ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 35.1151ms"}}
+[debug] [2023-06-23T15:23:14.138Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T15:23:14.138Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:23:14.138Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:23:14.138Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:23:14.141Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.141Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:23:14.141Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.141Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:23:14.142Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:23:14.148Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:23:14.149Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:23:14.149Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:23:14.150Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:23:14.163Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 14.1719ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 14.1719ms"}}
+[debug] [2023-06-23T15:23:14.164Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:23:14.165Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:23:14.165Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:23:14.165Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:23:14.175Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.175Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:23:14.175Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:23:14.175Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:23:14.176Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:23:14.179Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:23:14.180Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:23:14.180Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:23:14.182Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:23:14.199Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 16.7474ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 16.7474ms"}}
+[debug] [2023-06-23T15:23:14.203Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:23:14.203Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:23:14.203Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:23:14.204Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:41:40.432Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.432Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:41:40.434Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.432Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:41:40.434Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:41:40.442Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:41:40.443Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:41:40.443Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:41:40.444Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:41:40.448Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.447Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.432Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:41:40.448Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.432Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.447Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:41:40.448Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:41:40.461Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:41:40.461Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:41:40.461Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:41:40.462Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T15:41:40.467Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 23.008ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 23.008ms"}}
+[debug] [2023-06-23T15:41:40.468Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:41:40.469Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:41:40.469Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:41:40.469Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.447Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:41:40.471Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.471Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.447Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:41:40.471Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.447Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.471Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:41:40.471Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:41:40.476Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:41:40.476Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:41:40.476Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:41:40.477Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:41:40.488Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 26.139ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 26.139ms"}}
+[debug] [2023-06-23T15:41:40.489Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T15:41:40.489Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:41:40.489Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:41:40.489Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.471Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:41:40.494Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 17.6075ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 17.6075ms"}}
+[debug] [2023-06-23T15:41:40.495Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:41:40.495Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:41:40.496Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:41:40.496Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:41:40.498Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.498Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:41:40.498Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:41:40.498Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:41:40.498Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:41:40.504Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:41:40.504Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:41:40.504Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:41:40.505Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:41:40.509Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 4.565ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 4.565ms"}}
+[debug] [2023-06-23T15:41:40.511Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:41:40.511Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:41:40.511Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:41:40.512Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:43:50.718Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.718Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:43:50.718Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.718Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:43:50.718Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:43:50.723Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:43:50.723Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:43:50.723Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:43:50.724Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:43:50.726Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.726Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.718Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:43:50.732Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.718Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.726Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:43:50.732Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:43:50.735Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:43:50.735Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:43:50.735Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:43:50.736Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T15:43:50.739Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 14.9274ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 14.9274ms"}}
+[debug] [2023-06-23T15:43:50.740Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:43:50.740Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:43:50.740Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:43:50.740Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.726Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:43:50.741Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.741Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.726Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:43:50.742Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.726Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.741Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:43:50.742Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:43:50.746Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:43:50.747Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:43:50.747Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:43:50.748Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:43:50.750Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 14.8176ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 14.8176ms"}}
+[debug] [2023-06-23T15:43:50.752Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T15:43:50.753Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:43:50.753Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:43:50.753Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.741Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:43:50.756Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 8.3057ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 8.3057ms"}}
+[debug] [2023-06-23T15:43:50.757Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:43:50.758Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:43:50.758Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:43:50.758Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:43:50.759Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.759Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:43:50.760Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:43:50.759Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:43:50.760Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:43:50.764Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:43:50.764Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:43:50.764Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:43:50.765Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:43:50.782Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 17.8301ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 17.8301ms"}}
+[debug] [2023-06-23T15:43:50.783Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:43:50.784Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:43:50.784Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:43:50.784Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:47:23.053Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.053Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:47:23.053Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.053Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:23.054Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:47:23.057Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:47:23.057Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:47:23.057Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:47:23.058Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:47:23.062Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.061Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.053Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:23.062Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.053Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.061Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:47:23.062Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:47:23.065Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:47:23.065Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:47:23.065Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:47:23.066Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T15:47:23.068Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 10.0289ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 10.0289ms"}}
+[debug] [2023-06-23T15:47:23.069Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:47:23.069Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:47:23.069Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:47:23.069Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.061Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:23.071Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.071Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.061Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:23.071Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.061Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.071Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:47:23.071Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:47:23.077Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:47:23.077Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:47:23.077Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:47:23.078Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:47:23.080Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 14.6594ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 14.6594ms"}}
+[debug] [2023-06-23T15:47:23.082Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T15:47:23.082Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:47:23.083Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:47:23.083Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.071Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:23.091Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 14.2907ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 14.2907ms"}}
+[debug] [2023-06-23T15:47:23.093Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:47:23.093Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:47:23.093Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:47:23.094Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:47:23.095Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.095Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:47:23.095Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:23.095Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:23.096Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:47:23.100Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:47:23.101Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:47:23.101Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:47:23.102Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:47:23.137Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 35.2824ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 35.2824ms"}}
+[debug] [2023-06-23T15:47:23.138Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:47:23.138Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:47:23.138Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:47:23.139Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:47:37.568Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.568Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:47:37.568Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.568Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:37.569Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:47:37.572Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:47:37.579Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:47:37.579Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:47:37.580Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:47:37.583Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.583Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.568Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:37.583Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.568Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.583Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:47:37.583Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:47:37.587Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:47:37.587Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:47:37.588Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:47:37.592Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T15:47:37.595Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 15.2642ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 15.2642ms"}}
+[debug] [2023-06-23T15:47:37.597Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:47:37.597Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:47:37.597Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:47:37.597Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.583Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:37.599Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.599Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.583Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:37.599Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.583Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.599Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:47:37.600Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:47:37.604Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:47:37.604Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:47:37.604Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:47:37.606Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:47:37.608Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 16.4536ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 16.4536ms"}}
+[debug] [2023-06-23T15:47:37.609Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T15:47:37.609Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:47:37.610Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:47:37.610Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.599Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:37.614Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 8.6006ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 8.6006ms"}}
+[debug] [2023-06-23T15:47:37.615Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:47:37.616Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:47:37.616Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:47:37.616Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:47:37.617Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.617Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:47:37.617Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:47:37.617Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:47:37.617Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:47:37.629Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:47:37.631Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:47:37.631Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:47:37.633Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:47:37.640Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 8.2236ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 8.2236ms"}}
+[debug] [2023-06-23T15:47:37.642Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:47:37.642Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:47:37.642Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:47:37.642Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:59:30.141Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.141Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:59:30.143Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.141Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:59:30.144Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:59:30.154Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:59:30.154Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:59:30.155Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:59:30.157Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:59:30.161Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.161Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.141Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:59:30.161Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.141Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.161Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:59:30.162Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:59:30.169Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:59:30.170Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:59:30.170Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:59:30.170Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T15:59:30.177Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 20.1779ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 20.1779ms"}}
+[debug] [2023-06-23T15:59:30.179Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:59:30.179Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:59:30.179Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:59:30.179Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.161Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:59:30.180Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.180Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.161Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:59:30.189Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.161Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.180Z"],"workRunningCount":2}
+[debug] [2023-06-23T15:59:30.189Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:59:30.191Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:59:30.192Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:59:30.192Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:59:30.193Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:59:30.195Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 24.3799ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 24.3799ms"}}
+[debug] [2023-06-23T15:59:30.196Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T15:59:30.196Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:59:30.196Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:59:30.197Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.180Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:59:30.204Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 11.5374ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 11.5374ms"}}
+[debug] [2023-06-23T15:59:30.205Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:59:30.205Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:59:30.206Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:59:30.206Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:59:30.207Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.207Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T15:59:30.208Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T15:59:30.207Z"],"workRunningCount":1}
+[debug] [2023-06-23T15:59:30.208Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T15:59:30.212Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T15:59:30.213Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T15:59:30.213Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T15:59:30.214Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T15:59:30.231Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 17.0909ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 17.0909ms"}}
+[debug] [2023-06-23T15:59:30.232Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T15:59:30.233Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T15:59:30.233Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T15:59:30.233Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:52:08.162Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.162Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:52:08.164Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.162Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:52:08.164Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T16:52:08.181Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T16:52:08.182Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T16:52:08.182Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T16:52:08.182Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T16:52:08.185Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.185Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.162Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:52:08.185Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.162Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.185Z"],"workRunningCount":2}
+[debug] [2023-06-23T16:52:08.185Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T16:52:08.188Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T16:52:08.188Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T16:52:08.188Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T16:52:08.189Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T16:52:08.195Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 13.5785ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 13.5785ms"}}
+[debug] [2023-06-23T16:52:08.197Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T16:52:08.197Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T16:52:08.197Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T16:52:08.198Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.185Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:52:08.198Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.198Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.185Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:52:08.199Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.185Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.198Z"],"workRunningCount":2}
+[debug] [2023-06-23T16:52:08.199Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T16:52:08.205Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T16:52:08.206Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T16:52:08.206Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T16:52:08.206Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T16:52:08.209Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 20.3508ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 20.3508ms"}}
+[debug] [2023-06-23T16:52:08.211Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T16:52:08.211Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T16:52:08.211Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T16:52:08.211Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.198Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:52:08.216Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 10.4023ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 10.4023ms"}}
+[debug] [2023-06-23T16:52:08.220Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T16:52:08.220Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T16:52:08.220Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T16:52:08.220Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:52:08.221Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.221Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:52:08.222Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:52:08.221Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:52:08.228Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T16:52:08.242Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T16:52:08.242Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T16:52:08.242Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T16:52:08.243Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T16:52:08.250Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 7.2584ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 7.2584ms"}}
+[debug] [2023-06-23T16:52:08.251Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T16:52:08.252Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T16:52:08.252Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T16:52:08.252Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:53:29.511Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.511Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:53:29.512Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.511Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:53:29.512Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T16:53:29.515Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T16:53:29.516Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T16:53:29.516Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T16:53:29.517Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T16:53:29.519Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.519Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.511Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:53:29.520Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.511Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.519Z"],"workRunningCount":2}
+[debug] [2023-06-23T16:53:29.520Z] Accepted request OPTIONS /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T16:53:29.523Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T16:53:29.523Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T16:53:29.523Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T16:53:29.524Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: BUSY"}}
+[debug] [2023-06-23T16:53:29.526Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 9.4588ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 9.4588ms"}}
+[debug] [2023-06-23T16:53:29.536Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T16:53:29.536Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T16:53:29.536Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T16:53:29.536Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.519Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:53:29.538Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.538Z"],"queueLength":1,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.519Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:53:29.538Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.519Z","/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.538Z"],"workRunningCount":2}
+[debug] [2023-06-23T16:53:29.538Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T16:53:29.541Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T16:53:29.541Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T16:53:29.542Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T16:53:29.542Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T16:53:29.543Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 19.572ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 19.572ms"}}
+[debug] [2023-06-23T16:53:29.544Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: IDLE"}}
+[debug] [2023-06-23T16:53:29.544Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T16:53:29.544Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T16:53:29.545Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.538Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:53:29.549Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 6.8578ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 6.8578ms"}}
+[debug] [2023-06-23T16:53:29.550Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T16:53:29.550Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T16:53:29.551Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T16:53:29.551Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:53:29.552Z] [work-queue] {"queuedWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.552Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:53:29.552Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/chai-del/us-central1/app/api/users/jwtVerification-2023-06-23T16:53:29.552Z"],"workRunningCount":1}
+[debug] [2023-06-23T16:53:29.552Z] Accepted request GET /chai-del/us-central1/app/api/users/jwtVerification --> us-central1-app
+[debug] [2023-06-23T16:53:29.555Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-23T16:53:29.555Z] [functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/chai-del/us-central1/app/api/users/jwtVerification, mapping to path=/api/users/jwtVerification"}}
+[debug] [2023-06-23T16:53:29.555Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-23T16:53:29.556Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: BUSY"}}
+[debug] [2023-06-23T16:53:29.561Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 5.42ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 5.42ms"}}
+[debug] [2023-06-23T16:53:29.563Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: IDLE"}}
+[debug] [2023-06-23T16:53:29.563Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-23T16:53:29.563Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-23T16:53:29.563Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-23T16:56:18.544Z] File F:\React_Project\chaishai\server\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\React_Project\\chaishai\\server\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-23T16:56:19.548Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T16:56:22.231Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T16:56:22.231Z] Building nodejs source
+[debug] [2023-06-23T16:56:22.232Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T16:56:22.235Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T16:56:22.247Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T16:56:23.276Z] Serving at port 8074
+
+[debug] [2023-06-23T16:56:24.158Z] File F:\React_Project\chaishai\server\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\React_Project\\chaishai\\server\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-23T16:56:25.167Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T16:56:28.001Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T16:56:28.001Z] Building nodejs source
+[debug] [2023-06-23T16:56:28.001Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T16:56:28.005Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T16:56:28.011Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T16:56:28.022Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T16:56:28.048Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-23T16:56:28.095Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2023-06-23T16:56:28.095Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: FINISHING"}}
+[debug] [2023-06-23T16:56:28.095Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2023-06-23T16:56:28.096Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: FINISHING"}}
+[debug] [2023-06-23T16:56:28.096Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2023-06-23T16:56:28.096Z] [worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: FINISHING"}}
+[debug] [2023-06-23T16:56:28.112Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: exited"}}
+[debug] [2023-06-23T16:56:28.112Z] [worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-37e9e216-cac2-40eb-af77-9519ae4a44db]: FINISHED"}}
+[debug] [2023-06-23T16:56:28.112Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: exited"}}
+[debug] [2023-06-23T16:56:28.113Z] [worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-09ba4cb8-d552-4c00-ae4c-8e0d8eb9d50d]: FINISHED"}}
+[debug] [2023-06-23T16:56:28.113Z] [worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: exited"}}
+[debug] [2023-06-23T16:56:28.113Z] [worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f17b9591-3a5c-4220-9606-a4aea5d7e6c8]: FINISHED"}}
+[debug] [2023-06-23T16:56:28.557Z] Serving at port 8192
+
+[debug] [2023-06-23T16:56:29.935Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T16:56:29.939Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-23T16:57:10.860Z] File F:\React_Project\chaishai\server\functions\routes\products.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\React_Project\\chaishai\\server\\functions\\routes\\products.js changed, reloading triggers"}}
+[debug] [2023-06-23T16:57:11.870Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T16:57:14.764Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T16:57:14.764Z] Building nodejs source
+[debug] [2023-06-23T16:57:14.764Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T16:57:14.767Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T16:57:14.772Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T16:57:15.101Z] Serving at port 8482
+
+[debug] [2023-06-23T16:57:15.582Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T16:57:15.588Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-23T16:57:55.674Z] File F:\React_Project\chaishai\server\functions\routes\products.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\React_Project\\chaishai\\server\\functions\\routes\\products.js changed, reloading triggers"}}
+[debug] [2023-06-23T16:57:56.677Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T16:57:58.816Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T16:57:58.816Z] Building nodejs source
+[debug] [2023-06-23T16:57:58.817Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T16:57:58.820Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T16:57:58.826Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T16:57:59.533Z] Serving at port 8142
+
+[debug] [2023-06-23T16:58:00.389Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T16:58:00.395Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-23T16:58:41.314Z] File F:\React_Project\chaishai\server\functions\routes\products.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\React_Project\\chaishai\\server\\functions\\routes\\products.js changed, reloading triggers"}}
+[debug] [2023-06-23T16:58:42.370Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T16:58:44.417Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T16:58:44.417Z] Building nodejs source
+[debug] [2023-06-23T16:58:44.418Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T16:58:44.423Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T16:58:44.430Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T16:58:44.758Z] Serving at port 8134
+
+[debug] [2023-06-23T16:58:45.209Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T16:58:45.216Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-23T17:00:17.486Z] File F:\React_Project\chaishai\server\functions\routes\products.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\React_Project\\chaishai\\server\\functions\\routes\\products.js changed, reloading triggers"}}
+[debug] [2023-06-23T17:00:18.491Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T17:00:21.449Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T17:00:21.450Z] Building nodejs source
+[debug] [2023-06-23T17:00:21.450Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T17:00:21.455Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T17:00:21.461Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T17:00:21.799Z] Serving at port 8385
+
+[debug] [2023-06-23T17:00:22.335Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T17:00:22.340Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-23T17:01:11.676Z] File F:\React_Project\chaishai\server\functions\routes\products.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\React_Project\\chaishai\\server\\functions\\routes\\products.js changed, reloading triggers"}}
+[debug] [2023-06-23T17:01:12.680Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T17:01:14.405Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T17:01:14.406Z] Building nodejs source
+[debug] [2023-06-23T17:01:14.406Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T17:01:14.409Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T17:01:14.416Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T17:01:14.944Z] Serving at port 8304
+
+[debug] [2023-06-23T17:01:15.597Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T17:01:15.602Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-06-23T17:02:57.281Z] File F:\React_Project\chaishai\server\functions\routes\products.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\React_Project\\chaishai\\server\\functions\\routes\\products.js changed, reloading triggers"}}
+[debug] [2023-06-23T17:02:58.290Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-06-23T17:02:59.859Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-23T17:02:59.859Z] Building nodejs source
+[debug] [2023-06-23T17:02:59.859Z] Failed to find version of module node: reached end of search path F:\React_Project\chaishai\server\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-23T17:02:59.862Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-23T17:02:59.867Z] Found firebase-functions binary at 'F:\React_Project\chaishai\server\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-23T17:03:00.152Z] Serving at port 8597
+
+[debug] [2023-06-23T17:03:00.591Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-23T17:03:00.596Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
