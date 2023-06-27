@@ -20,6 +20,8 @@ import {
 import { motion } from "framer-motion";
 import { buttonClick } from "../animation";
 import { MdDelete } from "react-icons/md";
+import { addNewProduct, getAllProducts } from "../api";
+import { setAllProducts } from "../contexts/actions/productActions";
 
 const DBNewItems = () => {
   const [ItemName, setItemName] = useState("");
@@ -81,11 +83,25 @@ const DBNewItems = () => {
     const data = {
       product_name: ItemName,
       product_category: category,
-      procuct_price: price,
+      product_price: price,
       imageURL: imageDownloadURL,
       calorie: calorie,
     };
-    console.log(data);
+    addNewProduct(data).then((res) => {
+      console.log(data);
+      dispatch(alertSuccess("New Item Added"));
+      setTimeout(() => {
+        dispatch(alertNull());
+      }, 3000);
+      setImageDownloadURL(null);
+      setItemName("");
+      setPrice("");
+      setCalorie("");
+      setCategory(null);
+    });
+    getAllProducts().then((data) => {
+      dispatch(setAllProducts(data));
+    });
   };
   return (
     <div className="flex items-center justify-center flex-col pt-6 px-24 w-full">

@@ -32,6 +32,6 @@ const userRoute = require("./routes/user");
 app.use("/api/users", userRoute);
 
 const productRoute = require("./routes/products");
-app.use("/api/products", userRoute);
+app.use("/api/products", productRoute); // Use productRoute instead of userRoute
 
 exports.app = functions.https.onRequest(app);
