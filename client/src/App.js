@@ -4,12 +4,13 @@ import { Dashboard, Login, Main } from "./containers";
 import { getAuth } from "firebase/auth";
 import { app } from "./config/firebase.config";
 import { useDispatch, useSelector } from "react-redux";
-import { validateUserJWTToken } from "./api";
+import { getAllCartItems, validateUserJWTToken } from "./api";
 import { setUserDetails } from "./contexts/actions/userActions";
 import { motion } from "framer-motion";
 import { fadeInOut } from "./animation";
 import "./assets/css/Loader.css";
 import { Alert, MainLoader } from "./components";
+import { setCartItems } from "./contexts/actions/cartAction";
 
 const App = () => {
   const firebaseAuth = getAuth(app);
@@ -27,6 +28,12 @@ const App = () => {
           // send this token to backend
           // create api by using axious and call api to validate token here
           validateUserJWTToken(token).then((data) => {
+            if (data) {
+              getAllCartItems(data.data?.user_id).then((items) => {
+                console.log(items);
+                dispatch(setCartItems(items));
+              });
+            }
             dispatch(setUserDetails(data));
           });
         });

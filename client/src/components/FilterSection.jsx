@@ -52,7 +52,7 @@ export const FilterCard = ({ data, index, category, setCategory }) => {
       {...staggerFadeInOut(index)}
       onClick={() => setCategory(data.category)}
       className={`group w-28 min-w-[128px] cursor-pointer rounded-md py-6 ${
-        category === data.category ? "bg-red-500" : "text-primary"
+        category === data.category ? "bg-red-500" : "bg-primary"
       } hover:bg-red-500 shadow-md flex flex-col items-center justify-center gap-4`}
     >
       <div

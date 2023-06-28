@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
-import { FilterSection, Header, Home, HomeSlider } from "../components";
-import { LoginBg, LogoLight } from "../assets";
+import {
+  FilterSection,
+  Header,
+  Home,
+  HomeSlider,
+  MainLoader,
+} from "../components";
+import { Loader, LoginBg, LogoLight } from "../assets";
 import { useDispatch, useSelector } from "react-redux";
 import { setAllProducts } from "../contexts/actions/productActions";
 import { getAllProducts } from "../api";
@@ -28,7 +34,7 @@ const Main = () => {
             <FilterSection />
           </>
         ) : (
-          <p>Loading...</p>
+          <MainLoader />
         )}
       </div>
     </main>
